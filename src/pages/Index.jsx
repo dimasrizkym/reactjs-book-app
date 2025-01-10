@@ -181,14 +181,13 @@ const Dashboard = () => {
               ))}
             </div>
 
-            <div className="flex justify-center mt-6">
+            <div className="max-w-xl flex justify-center items-center flex-wrap gap-2 mt-6 mx-auto">
               {Array.from({ length: totalPages }, (_, i) => i + 1).map(
                 (page) => (
                   <Button
                     key={page}
                     onClick={() => handlePageChange(page)}
                     variant={currentPage === page ? "primary" : "secondary"}
-                    className="mx-2"
                   >
                     {page}
                   </Button>
