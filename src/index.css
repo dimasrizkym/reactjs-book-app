@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply transition duration-300;
+}
+
+body {
+  @apply bg-white text-black;
+}
+
+html.dark {
+  @apply bg-black text-white;
+}
+
+.h-screen-custom {
+  min-height: calc(100vh - 60px);
+}
+
+@media (min-width: 768px) {
+  .h-screen-custom {
+    min-height: calc(100vh - 72px);
+  }
+}
