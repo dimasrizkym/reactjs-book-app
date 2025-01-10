@@ -23,14 +23,16 @@ const Button = ({
   const styles = `
     ${baseStyles} 
     ${variants[variant]} 
-    ${fullWidth ? "w-full text-center" : ""}
+    ${fullWidth ? "w-full" : ""}
     ${className}
   `;
 
   return (
     <button type={type} onClick={onClick} className={styles} {...props}>
       <div className="w-full flex items-center justify-between space-x-2">
-        <span className="w-full text-center">{children}</span>
+        <span className={icon ? "w-full text-left" : "w-full text-center"}>
+          {children}
+        </span>
         {icon && <span>{icon}</span>}
       </div>
     </button>
