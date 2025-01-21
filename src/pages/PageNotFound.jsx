@@ -8,7 +8,7 @@ const PageNotFound = () => {
         <h1 className="text-8xl font-semibold mb-4 text-gray-900 dark:text-white">
           404
         </h1>
-        <h1 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white mb-8">
+        <h1 className="text-xl font-semibold text-gray-900 dark:text-white mb-8">
           Page Not Found
         </h1>
         <Link
